@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ path: "./backend/.env" });
 import express from "express";
 import nodemailer from "nodemailer"
 import contactRoutes from "./routes/contactRoutes.js";
@@ -17,6 +18,14 @@ app.use((_, res) => {
 })
 const port = process.env.PORT || 5000;
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(`server is running on port ${port}`)
-})
+});
+
+server.on('error', (e) => {
+    console.error('Server error:', e);
+});
+
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught Exception:', err);
+});

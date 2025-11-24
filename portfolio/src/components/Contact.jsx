@@ -23,8 +23,13 @@ const Contact = () => {
         setIsSubmitting(true);
 
 
+        // Define API URL based on environment
+        const API_BASE_URL = import.meta.env.PROD
+            ? "https://aayushpatel036.onrender.com"
+            : "http://localhost:5000";
+
         try {
-            const res = await axios.post("http://localhost:5000/contact", formState);
+            const res = await axios.post(`${API_BASE_URL}/contact`, formState);
 
             if (res.status === 200) {
                 setIsSuccess(true);

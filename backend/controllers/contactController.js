@@ -1,8 +1,9 @@
-import { transporter } from "../config/mailConfig.js";
+import { getTransporter } from "../config/mailConfig.js";
 
 export const sendContactMail = async (req, res) => {
     const { name, email, message } = req.body;
     try {
+        const transporter = getTransporter();
         await transporter.sendMail({
             from: email,
             to: process.env.EMAIL_USER,
