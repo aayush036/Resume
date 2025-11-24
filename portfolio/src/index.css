@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-sans: "Inter", "sans-serif";
+  --font-mono: "Fira Code", "monospace";
+  --color-dark-900: #0a0a0a;
+  --color-dark-800: #121212;
+  --color-dark-700: #1e1e1e;
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+}
+
+/* Custom scrollbar (your original code) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
