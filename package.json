@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node backend/server.js",
+    "build": "npm install && npm install --prefix portfolio && npm run build --prefix portfolio"
   },
   "keywords": [],
   "author": "",
