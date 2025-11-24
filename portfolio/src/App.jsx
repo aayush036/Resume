@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Preloader from './components/Preloader';
+import Preloader from './components/PreLoader';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
