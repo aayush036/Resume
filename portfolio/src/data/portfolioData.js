@@ -7,7 +7,7 @@ export const portfolioData = {
     techWords: ["Solidity", "Node.js", "React", "Tailwind CSS", "MongoDB"],
 
     resumeUrl:
-        "https://drive.google.com/file/d/1euuAtVPGuVdK6Rr0dE6PYr5JwfpGcMgO/preview",
+        "https://drive.google.com/file/d/1Zce6GFBELW7XrLmyZfhTF7U_qqIbu6Ar/preview",
 
     about: {
         profileImage: "https://picsum.photos/400/400",
